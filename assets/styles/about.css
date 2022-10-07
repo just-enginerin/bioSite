@@ -1,0 +1,52 @@
+.container {
+    display: grid;
+    grid-template-areas: 
+        "header header"
+        "p1 portrait1"
+        "portrait2 p2"
+        "p3 portrait3";
+    width: 70%;
+    margin: 0 auto;
+    justify-content: center;
+    grid-gap: 50px;
+    margin: 50px auto;
+    align-items: center;
+}
+
+h2 {
+    grid-area: header;
+    font-weight: 100;
+}
+
+
+#p1 {
+    grid-area: p1;
+}
+
+#p2 {
+    grid-area: p2;
+}
+
+#p3 {
+    grid-area: p3;
+}
+
+img {
+    width: 80%;
+}
+
+portrait1 {
+    grid-area: portrait1;
+}
+
+portrait2 {
+    grid-area: portrait2;
+}
+
+portrait3 {
+    grid-area: portrait3;
+}
+
+p {
+    width: 80%;
+}

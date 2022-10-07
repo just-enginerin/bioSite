@@ -1,0 +1,47 @@
+main {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    padding: 20px;
+    row-gap: 50px;
+    margin: 0 auto;
+}
+
+.hobby {
+    width: 100%;
+    display: grid;
+    grid-template-areas: 
+    "hobby-image hobby-image hobby-title" 
+    "hobby-image hobby-image hobby-description";
+    grid-column-gap: 20px;
+    padding-top: 50px;
+    border-top: 2px solid lightgray;
+}
+
+.hobby-title {
+    grid-area: hobby-title;
+}
+
+.hobby-image {
+    grid-area: hobby-image;
+    width: 70%;
+}
+
+.hobby-image img {
+    width: 100%;
+}
+
+.hobby-description {
+    grid-area: hobby-description;
+}
+
+.carousel-caption {
+    margin: 0 auto;
+    background-color: rgba(0,0,0,0.7);
+    padding: 10px 20px;
+    position: initial;
+}
+
+.carousel-indicators {
+    top: 10px !important;
+}
