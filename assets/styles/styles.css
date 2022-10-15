@@ -85,7 +85,7 @@ nav h1 {
 .nav-links a {
     transition-duration: 500ms;
     text-decoration: none;
-
+    padding: 10px;
 }
 
 .nav-links a:hover {
