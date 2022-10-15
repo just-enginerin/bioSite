@@ -1,3 +1,24 @@
+body {
+    background-color: var(--light-purple);
+    color: var(--light-purple);
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    background-color: var(--light-purple);
+    box-shadow: 5px 10px 10px var(--dark-purple);
+}
+
+.nav-links a {
+    color: var(--dark-purple);
+}
+
+.nav-links a:hover {
+    color: #012015;
+    background-color: var(--yellow);
+}
+
 .container {
     display: grid;
     grid-template-areas: 
@@ -33,6 +54,7 @@ h2 {
 
 img {
     width: 80%;
+    border-radius: 15px;
 }
 
 portrait1 {
@@ -49,4 +71,19 @@ portrait3 {
 
 p {
     width: 80%;
+    color: var(--dark-purple);
+}
+
+p a {
+    background-color: var(--dark-purple);
+    color: var(--yellow);
+    transition-duration: 500ms;
+    border-radius: 5px;
+    padding: 2px 8px;
+}
+
+p a:hover {
+    background-color: var(--yellow);
+    color: var(--dark-purple);
+    transition-duration: 500ms;
 }

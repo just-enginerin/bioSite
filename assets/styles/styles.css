@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Brygada+1918:ital,wght@1,500&family=Cinzel&family=Cinzel+Decorative&family=Cormorant+Unicase:wght@600&family=Cormorant:wght@600&family=Kaisei+Decol&display=swap');
 
+:root {
+    --dark-green: #012015;
+    --green: #99DD46;
+    --yellow: #FFEE5C;
+    --dark-purple: #301934;
+    --light-purple: #DDCBF1;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -9,12 +17,14 @@ h1 {
     font-family: 'Cinzel Decorative', cursive;
     letter-spacing: 20%;
     font-size: 48px;
+    color: var(--dark-green);
 }
 
 h2 {
     font-family: 'Cinzel', serif;
     letter-spacing: 7.5%;
     font-size: 30px;
+    color: var(--dark-green);
 }
 
 h3 {
@@ -29,6 +39,7 @@ p {
     font-size: 16px;
     line-height: 26px;
     text-indent: 2em;
+    font-weight: 600;
 }
 
 .caption {
@@ -40,6 +51,12 @@ p {
 
 a {
     text-decoration: none;
+    color: var(--dark-green);
+}
+
+a:hover {
+    text-decoration: none;
+    color: var(--dark-purple);
 }
 
 nav {
@@ -48,7 +65,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 10px;
+    padding-top: 10px;
 }
 
 nav h1 {
@@ -66,18 +83,34 @@ nav h1 {
 }
 
 .nav-links a {
-    color: #012015;
-    background-color: rgba(255, 255, 255, 0.3);
-    padding: 10px;
     transition-duration: 500ms;
+    text-decoration: none;
 
 }
 
 .nav-links a:hover {
-    background-color: rgba(255, 255, 255, 1);
     transition-duration: 500ms;
+    text-decoration: underline;
 }
 
-.active-link {
-    text-decoration: underline;
+.carousel-control-prev, .carousel-control-next {
+    color: black;
+    height: 10%;
+    align-self: center;
+    margin-top: 60%;
+    background-color: rgba(255, 255, 255, .5);
+    background-color: rgba(0, 0, 0, .5);
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px black;
+}
+
+.carousel-control-prev, .carousel-control-next{
+    color: white;
+    opacity: 1 !important;
+}
+
+.carousel-control-prev:hover, .carousel-control-next:hover {
+    background-color: rgba(0, 0, 0, .7);
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px black;
 }

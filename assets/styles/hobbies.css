@@ -1,25 +1,61 @@
+body {
+    background-color: var(--green);
+    color: var(--green);
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    background-color: var(--green);
+    z-index: 5000;
+    display: flex;
+    align-items: center;
+    box-shadow: 5px 10px 10px var(--dark-green);
+}
+
+.nav-links a:hover {
+    color: var(--dark-green);
+    background-color: var(--yellow);
+}
+
 main {
     display: flex;
     flex-direction: column;
     width: 70%;
-    padding: 20px;
+    padding: 20px 20px 0;
     row-gap: 50px;
     margin: 0 auto;
+    height: fit-content;
+    align-items: flex-start;
+}
+
+h2 {
+    margin-bottom: -30px;
+}
+
+h3 {
+    font-weight: 600;
+}
+
+p {
+    font-weight: 300;
 }
 
 .hobby {
     width: 100%;
     display: grid;
     grid-template-areas: 
-    "hobby-image hobby-image hobby-title" 
+    "hobby-image hobby-image ." 
     "hobby-image hobby-image hobby-description";
     grid-column-gap: 20px;
     padding-top: 50px;
-    border-top: 2px solid lightgray;
+    border-top: 2px solid var(--yellow);
 }
 
 .hobby-title {
-    grid-area: hobby-title;
+    color: var(--yellow);
+    font-weight: 600;
+    margin-bottom: 20px;
 }
 
 .hobby-image {
@@ -33,6 +69,18 @@ main {
 
 .hobby-description {
     grid-area: hobby-description;
+    background-color: var(--dark-green);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    border-radius: 15px;
+}
+
+.carousel-inner {
+    border-radius: 15px;
 }
 
 .carousel-caption {
@@ -44,4 +92,14 @@ main {
 
 .carousel-indicators {
     top: 10px !important;
+}
+
+#hiking-image {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+#hiking-caption {
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
 }

@@ -29,6 +29,14 @@ nav {
     top: 0;
 }
 
+.nav-links a {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.nav-links a:hover {
+    background-color: var(--light-purple);
+}
+
 #landing-title {
     text-align: center;
     font-size: 80px;
