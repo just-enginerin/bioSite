@@ -5,3 +5,4 @@
     <li>Professor Richard Krasso</li>
     <li>Erin Brady</li>
 </ul>
+<p>Each Assignment is located on its respective branch.</p>
