@@ -93,24 +93,27 @@ nav h1 {
     text-decoration: underline;
 }
 
-.carousel-control-prev, .carousel-control-next {
-    color: black;
-    height: 10%;
-    align-self: center;
-    margin-top: 60%;
-    background-color: rgba(255, 255, 255, .5);
-    background-color: rgba(0, 0, 0, .5);
-    border-radius: 20px;
-    box-shadow: 5px 5px 10px black;
+.page-title {
+    text-align: center;
+    width: 100%;
 }
 
-.carousel-control-prev, .carousel-control-next{
-    color: white;
-    opacity: 1 !important;
+#references {
+    width: 70%;
+    text-align: center;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
 }
 
-.carousel-control-prev:hover, .carousel-control-next:hover {
-    background-color: rgba(0, 0, 0, .7);
-    border-radius: 20px;
-    box-shadow: 5px 5px 10px black;
+#references h2 {
+    margin-bottom: 30px;
+}
+
+footer {
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
 }

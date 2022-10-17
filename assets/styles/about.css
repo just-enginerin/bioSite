@@ -12,14 +12,17 @@ nav {
 
 .nav-links a {
     color: var(--dark-purple);
+    background-color: var(--light-purple);
+    box-shadow: var(--dark-purple) 0px 2px 20px;
+    border-radius: 5px;
 }
 
 .nav-links a:hover {
-    color: #012015;
-    background-color: var(--yellow);
+    background-color: var(--dark-purple);
+    color: var(--yellow);
 }
 
-.container {
+main {
     display: grid;
     grid-template-areas: 
         "header header"
@@ -32,11 +35,18 @@ nav {
     grid-gap: 50px;
     margin: 50px auto;
     align-items: center;
+    padding: 20px 0 50px;
+    border-bottom: 2px solid var(--dark-purple);
 }
 
 h2 {
     grid-area: header;
     font-weight: 100;
+}
+
+.page-title {
+    padding: 0 0 50px;
+    border-bottom: 2px solid var(--dark-purple);
 }
 
 
@@ -69,7 +79,7 @@ portrait3 {
     grid-area: portrait3;
 }
 
-p {
+main p {
     width: 80%;
     color: var(--dark-purple);
 }
@@ -86,4 +96,19 @@ p a:hover {
     background-color: var(--yellow);
     color: var(--dark-purple);
     transition-duration: 500ms;
+}
+
+#references p {
+    color: var(--dark-purple);
+    font-weight: 600;
+}
+
+footer {
+    background-color: var(--dark-purple);
+    width: 100%;
+}
+
+footer .caption {
+    padding: 0;
+    text-indent: 0;
 }

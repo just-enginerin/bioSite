@@ -13,6 +13,12 @@ nav {
     box-shadow: 5px 10px 10px var(--dark-green);
 }
 
+.nav-links a {
+    box-shadow: var(--dark-green) 0px 2px 20px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
 .nav-links a:hover {
     color: var(--dark-green);
     background-color: var(--yellow);
@@ -27,10 +33,12 @@ main {
     margin: 0 auto;
     height: fit-content;
     align-items: flex-start;
+    border-bottom: 2px solid var(--yellow);
+    padding-bottom: 50px;
 }
 
-h2 {
-    margin-bottom: -30px;
+main h2 {
+    margin-top: 30px;
 }
 
 h3 {
@@ -45,7 +53,7 @@ p {
     width: 100%;
     display: grid;
     grid-template-areas: 
-    "hobby-image hobby-image ." 
+    "hobby-image hobby-image hobby-description" 
     "hobby-image hobby-image hobby-description";
     grid-column-gap: 20px;
     padding-top: 50px;
@@ -94,6 +102,28 @@ p {
     top: 10px !important;
 }
 
+.carousel-control-prev, .carousel-control-next {
+    color: black;
+    height: 10%;
+    align-self: center;
+    margin-top: 60%;
+    background-color: rgba(255, 255, 255, .5);
+    background-color: rgba(0, 0, 0, .5);
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px black;
+}
+
+.carousel-control-prev, .carousel-control-next{
+    color: white;
+    opacity: 1 !important;
+}
+
+.carousel-control-prev:hover, .carousel-control-next:hover {
+    background-color: rgba(0, 0, 0, .7);
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px black;
+}
+
 #hiking-image {
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
@@ -102,4 +132,28 @@ p {
 #hiking-caption {
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
+}
+
+#references p {
+    color: var(--dark-green);
+    font-weight: 600;
+}
+
+#references a {
+    background-color: var(--dark-green);
+    color: var(--yellow);
+}
+
+#references a:hover {
+    background-color: var(--yellow);
+    color:var(--dark-green)
+}
+
+footer {
+    color: var(--yellow);
+    background-color: var(--dark-green);
+}
+
+footer .caption {
+    margin: 0;
 }
